@@ -64,7 +64,7 @@ module.exports = function(newman, options) {
         newman.exports.push({
             name: 'newman-reporter-json-summary',
             default: 'summary.json',
-            path:  options.summaryJsonExport,
+            path:  options.export,
             content: JSON.stringify(createSummary(data.summary))
         });
     });
